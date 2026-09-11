@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
       document.getElementById("header").innerHTML = html;
 
       // Автоматичне підсвічування активного пункту
-      document.querySelectorAll("header-list-nav a").forEach((link) => {
+      document.querySelectorAll(".header-list-nav a").forEach((link) => {
         if (link.href.includes(window.location.pathname)) {
           link.classList.add("active");
         }
