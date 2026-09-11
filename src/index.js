@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
   // Підтягуємо header.html
   fetch("./src/header/header.html")
-    .then((res) => res.text())
-    .then((html) => {
+    .then(response => response.text())
+  .then(data => {
       document.getElementById("header").innerHTML = html;
 
       // Автоматичне підсвічування активного пункту
